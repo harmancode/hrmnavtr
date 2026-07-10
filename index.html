@@ -21,9 +21,11 @@
 
   *{ box-sizing:border-box; margin:0; padding:0; }
 
-  html, body{ height:100%; }
+  html{ height:100%; }
 
   body{
+    min-height:100%;
+    min-height:100dvh;
     background:var(--bg);
     background-image:
       radial-gradient(circle at 15% 10%, rgba(127,90,240,0.07), transparent 40%),
@@ -35,6 +37,7 @@
     justify-content:center;
     padding:32px;
     -webkit-font-smoothing:antialiased;
+    overflow-y:auto;
   }
 
   .card{
@@ -194,15 +197,15 @@
       <div class="prompt"><span class="arrow">&gt;</span> whoami</div>
       <h1>Ertugrul Harman</h1>
 
-      <p class="role">Attorney &amp; licensed mediator in Türkiye. Based in the United States, building at the intersection of law, <span class="tag">technology</span>, and <span class="tag">AI</span>.</p>
+      <p class="role">Attorney (Istanbul Bar) &amp; Software Engineer. Based in the United States, building at the intersection of law, <span class="tag">technology</span>, and <span class="tag">AI</span>.</p>
 
       <ul class="credentials">
         <li><span class="bullet">▹</span><span class="line"><span class="main">Attorney</span> — Istanbul Bar Association &amp; Union of Turkish Bar Associations, Türkiye</span></li>
+        <li><span class="bullet">▹</span><span class="line"><span class="main">Senior Software Engineer</span> — United States — enterprise &amp; independent</span></li>
         <li><span class="bullet">▹</span><span class="line"><span class="main">Licensed Mediator</span> — Türkiye (training completed in Texas, United States)</span></li>
         <li><span class="bullet">▹</span><span class="line"><span class="main">Member</span> — American Bar Association, United States</span></li>
         <li><span class="bullet">▹</span><span class="line"><span class="main">LLM, International Business Law</span> — University of Exeter, United Kingdom</span></li>
         <li><span class="bullet">▹</span><span class="line"><span class="main">LLM, US Law</span> — Texas A&amp;M University, United States</span></li>
-        <li><span class="bullet">▹</span><span class="line"><span class="main">Senior Software Engineer</span> — United States — enterprise &amp; independent (iOS apps since 2019)</span></li>
       </ul>
 
       <div class="contact">
